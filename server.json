@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.GeminiGeorge22/gov-tenders-mcp",
+  "title": "Gov Tenders & Grants MCP: SAM.gov, Grants.gov, USAspending, UK, EU TED",
+  "description": "Government tenders, grants, awards and council meetings: SAM.gov, Grants.gov, USAspending, UK, TED.",
+  "repository": {
+    "url": "https://github.com/GeminiGeorge22/gov-tenders-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://github.com/GeminiGeorge22/gov-tenders-mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=publicrecords/govcon-opportunity-feed,publicrecords/grants-gov-scraper,publicrecords/usaspending-awards-scraper,publicrecords/uk-find-a-tender-scraper,publicrecords/eu-ted-notices-scraper,publicrecords/legistar-meetings-scraper"
+    }
+  ]
+}

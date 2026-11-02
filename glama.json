@@ -1,0 +1,9 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "GeminiGeorge22"
+  ],
+  "name": "Gov Tenders & Grants MCP: SAM.gov, Grants.gov, USAspending, UK, EU TED",
+  "description": "Government tenders, grants, awards and council meetings: SAM.gov, Grants.gov, USAspending, UK, TED. Hosted remote MCP via Apify; manifest-only repo.",
+  "category": "Government & Public Sector"
+}
