@@ -4,6 +4,6 @@
     "GeminiGeorge22"
   ],
   "name": "Gov Tenders & Grants MCP: SAM.gov, Grants.gov, USAspending, UK, EU TED",
-  "description": "Government tenders, grants, awards and council meetings: SAM.gov, Grants.gov, USAspending, UK, TED. Hosted remote MCP via Apify; manifest-only repo.",
+  "description": "Government tenders, grants, awards and council meetings: SAM.gov, Grants.gov, USAspending, UK, TED. Hosted remote MCP on Apify's gateway, plus an open-source Node.js stdio proxy in this repo.",
   "category": "Government & Public Sector"
 }
