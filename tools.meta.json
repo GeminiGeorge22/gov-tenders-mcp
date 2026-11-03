@@ -1,0 +1,8 @@
+{
+  "publicrecords/govcon-opportunity-feed": "Use when you need new US federal contract opportunities (SAM.gov) and grants (Grants.gov) in one feed, optionally only items new since the last run.",
+  "publicrecords/grants-gov-scraper": "Use when you need open US federal grant opportunities from Grants.gov with agency, deadline and eligibility.",
+  "publicrecords/usaspending-awards-scraper": "Use when you need who won US federal contracts and grants and for how much (USAspending), by agency, recipient, NAICS or period.",
+  "publicrecords/uk-find-a-tender-scraper": "Use when you need UK public-sector tenders from Find a Tender and Contracts Finder with buyer, value and deadline.",
+  "publicrecords/eu-ted-notices-scraper": "Use when you need EU procurement notices from TED (Tenders Electronic Daily) with buyer, CPV code, value and deadline.",
+  "publicrecords/legistar-meetings-scraper": "Use when you need city council or county board meetings, agenda items, votes and documents from a Legistar client (e.g. 'seattle', 'chicago')."
+}
