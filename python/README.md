@@ -1,5 +1,7 @@
 # gov-tenders-mcp (Python)
 
+<!-- mcp-name: io.github.GeminiGeorge22/gov-tenders-mcp -->
+
 Python version of the [gov-tenders-mcp](https://github.com/GeminiGeorge22/gov-tenders-mcp) stdio MCP server, built on the official [`mcp`](https://pypi.org/project/mcp/) Python SDK. Same tools, same `APIFY_TOKEN` env var, same hosted endpoint as the Node.js server.
 
 Stdio MCP server for government tenders, grants, awards and council meetings via Apify's hosted MCP gateway
@@ -11,15 +13,17 @@ It answers `initialize` and `tools/list` locally from the bundled `tools.json` (
 Requires Python 3.10+. With [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uvx --from "git+https://github.com/GeminiGeorge22/gov-tenders-mcp#subdirectory=python" gov-tenders-mcp
+uvx gov-tenders-mcp
 ```
 
 With pip:
 
 ```bash
-pip install "git+https://github.com/GeminiGeorge22/gov-tenders-mcp#subdirectory=python"
+pip install gov-tenders-mcp
 gov-tenders-mcp
 ```
+
+To run the latest unreleased code from GitHub instead of the PyPI release: `uvx --from "git+https://github.com/GeminiGeorge22/gov-tenders-mcp#subdirectory=python" gov-tenders-mcp`.
 
 MCP client config:
 
@@ -28,7 +32,7 @@ MCP client config:
   "mcpServers": {
     "gov-tenders": {
       "command": "uvx",
-      "args": ["--from", "git+https://github.com/GeminiGeorge22/gov-tenders-mcp#subdirectory=python", "gov-tenders-mcp"],
+      "args": ["gov-tenders-mcp"],
       "env": { "APIFY_TOKEN": "YOUR_APIFY_TOKEN" }
     }
   }
