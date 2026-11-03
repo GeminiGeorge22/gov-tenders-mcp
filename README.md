@@ -1,6 +1,6 @@
 # Gov Tenders & Grants MCP: SAM.gov, Grants.gov, USAspending, UK, EU TED
 
-**Public-sector opportunity data as MCP tools**: US federal contract opportunities (SAM.gov), federal grants (Grants.gov), federal awards (USAspending), UK tenders (Find a Tender, Contracts Finder), EU tenders (TED) and city council agendas and votes (Legistar). Every row carries its official source link.
+**Public-sector opportunity data as MCP tools**: US federal contract opportunities (SAM.gov), federal grants (Grants.gov), federal awards (USAspending), UK tenders (Find a Tender, Contracts Finder), EU tenders (TED) and city council meeting minutes and agendas (Legistar). Every row carries its official source link.
 
 Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Client config plus a small open-source stdio proxy server. No Actor source.**
 
@@ -23,7 +23,7 @@ Auth: sign in with Apify (OAuth) when your client prompts, or send an Apify API 
 | **USAspending Awards** | [publicrecords/usaspending-awards-scraper](https://apify.com/publicrecords/usaspending-awards-scraper) | `publicrecords--usaspending-awards-scraper` | Federal contract and grant awards by agency, recipient, NAICS and period, with award IDs and source links. |
 | **UK Find a Tender & Contracts Finder** | [publicrecords/uk-find-a-tender-scraper](https://apify.com/publicrecords/uk-find-a-tender-scraper) | `publicrecords--uk-find-a-tender-scraper` | UK government tender notices with buyer, value, deadline and source link. |
 | **EU TED Tenders** | [publicrecords/eu-ted-notices-scraper](https://apify.com/publicrecords/eu-ted-notices-scraper) | `publicrecords--eu-ted-notices-scraper` | EU procurement notices from Tenders Electronic Daily with buyer, CPV, value, deadline and source link. |
-| **Legistar Council Meetings** | [publicrecords/legistar-meetings-scraper](https://apify.com/publicrecords/legistar-meetings-scraper) | `publicrecords--legistar-meetings-scraper` | City council meetings, agenda items, votes and documents for any city on Legistar, with source link. |
+| **Legistar Council Meetings** | [publicrecords/legistar-meetings-scraper](https://apify.com/publicrecords/legistar-meetings-scraper) | `publicrecords--legistar-meetings-scraper` | City council meetings, agendas, minutes and documents for any city on Legistar, with source link. |
 
 The Apify gateway also exposes helper tools to read run results (`get-actor-run`, `get-dataset-items`).
 
@@ -32,7 +32,7 @@ The Apify gateway also exposes helper tools to read run results (`get-actor-run`
 - GovCon and bid teams: which federal opportunities were posted today?
 - Grant writers and nonprofits: which federal grants are open, and when do they close?
 - Market research: who has been winning awards from an agency, and how much?
-- Local news and civic watchers: what did a city council put on its agenda and vote on?
+- Local news and civic watchers: what did a city council put on its agenda, and what do the minutes say?
 
 ## Example prompts
 
