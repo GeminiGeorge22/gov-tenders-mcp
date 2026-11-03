@@ -2,7 +2,7 @@
 
 **Public-sector opportunity data as MCP tools**: US federal contract opportunities (SAM.gov), federal grants (Grants.gov), federal awards (USAspending), UK tenders (Find a Tender, Contracts Finder), EU tenders (TED) and city council agendas and votes (Legistar). Every row carries its official source link.
 
-Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Manifest-only repo: no Actor source.**
+Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Client config plus a small open-source stdio proxy server. No Actor source.**
 
 **Disclosure:** I maintain these Actors on Apify Store (publisher `publicrecords`).
 
@@ -67,10 +67,38 @@ The Apify gateway also exposes helper tools to read run results (`get-actor-run`
 }
 ```
 
+## Local stdio server (open source)
+
+This repo also ships a small MCP server in [`src/`](src/) for clients that only run local stdio servers. It starts over stdio, connects to the hosted Apify MCP endpoint above with **your own** `APIFY_TOKEN`, and forwards `tools/list` and `tools/call` unchanged. The token is only sent in the `Authorization` header and is never logged.
+
+```json
+{
+  "mcpServers": {
+    "gov-tenders": {
+      "command": "npx",
+      "args": ["-y", "github:GeminiGeorge22/gov-tenders-mcp"],
+      "env": { "APIFY_TOKEN": "YOUR_APIFY_TOKEN" }
+    }
+  }
+}
+```
+
+Or from a clone:
+
+```bash
+git clone https://github.com/GeminiGeorge22/gov-tenders-mcp.git
+cd gov-tenders-mcp && npm install
+APIFY_TOKEN=YOUR_APIFY_TOKEN node src/server.js
+```
+
+Optional env: `APIFY_ACTORS` (comma-separated subset of the Actors above) and `APIFY_MCP_URL` (full endpoint override).
+
+Tests run against an in-memory mock server, with no network and no token: `npm test`. Requires Node.js 18+.
+
 ## Registry
 
 Official MCP Registry name: `io.github.GeminiGeorge22/gov-tenders-mcp`
 
 ## License
 
-MIT, for this documentation and config only. Not affiliated with the sites the Actors read.
+MIT, for this documentation, config and the proxy server code in `src/`. Not affiliated with the sites the Actors read.
