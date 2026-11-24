@@ -1,5 +1,7 @@
 # Gov Tenders & Grants MCP: SAM.gov, Grants.gov, USAspending, UK, EU TED
 
+[![GeminiGeorge22/gov-tenders-mcp MCP server](https://glama.ai/mcp/servers/GeminiGeorge22/gov-tenders-mcp/badges/score.svg)](https://glama.ai/mcp/servers/GeminiGeorge22/gov-tenders-mcp)
+
 **Public-sector opportunity data as MCP tools**: US federal contract opportunities (SAM.gov), federal grants (Grants.gov), federal awards (USAspending), UK tenders (Find a Tender, Contracts Finder), EU tenders (TED) and city council meeting minutes and agendas (Legistar). Every row carries its official source link.
 
 Hosted remote MCP server (Streamable HTTP) on [Apify's MCP gateway](https://mcp.apify.com). **Client config plus a small open-source stdio proxy server. No Actor source.**
