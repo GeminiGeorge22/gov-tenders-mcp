@@ -11,8 +11,8 @@
   "tools": [
     {
       "name": "publicrecords--govcon-opportunity-feed",
-      "title": "Federal Contract Opportunities: SAM.gov + Grants.gov in one",
-      "description": "Federal Contract Opportunities: SAM.gov + Grants.gov in one. Which federal contract opportunities were posted today? Returns SAM.gov and Grants.gov notices in one feed, new-since-last-run deltas, and source links.\n\nWhen to use: Use when you need new US federal contract opportunities (SAM.gov) and grants (Grants.gov) in one feed, optionally only items new since the last run.\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/govcon-opportunity-feed\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/govcon-opportunity-feed",
+      "title": "Federal Government Contracts: SAM.gov + Grants.gov in one",
+      "description": "Federal Government Contracts: SAM.gov + Grants.gov in one. Which government contracts were posted today? Returns SAM.gov and Grants.gov notices in one feed, new-since-last-run deltas, and source links.\n\nWhen to use: Use when you need new US federal contract opportunities (SAM.gov) and grants (Grants.gov) in one feed, optionally only items new since the last run.\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/govcon-opportunity-feed\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/govcon-opportunity-feed",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -171,7 +171,7 @@
         }
       },
       "annotations": {
-        "title": "Federal Contract Opportunities: SAM.gov + Grants.gov in one",
+        "title": "Federal Government Contracts: SAM.gov + Grants.gov in one",
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": false,
@@ -479,8 +479,8 @@
     },
     {
       "name": "publicrecords--legistar-meetings-scraper",
-      "title": "Legistar City Council Minutes & Agendas: meetings, items",
-      "description": "Legistar City Council Minutes & Agendas: meetings, items. What did a city council decide? Returns Legistar meetings, agenda items, votes and documents for any city on Legistar, with the source link.\n\nWhen to use: Use when you need city council or county board meetings, agenda items, votes and documents from a Legistar client (e.g. 'seattle', 'chicago').\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/legistar-meetings-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/legistar-meetings-scraper",
+      "title": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
+      "description": "City Council Meeting Minutes & Agendas Scraper (Legistar). City council meeting scraper for Legistar: pull meetings for public Legistar cities by date range, with body, date, agenda and minutes status and links (PDF when posted), optional agenda item titles and the official source link. No login.\n\nWhen to use: Use when you need city council or county board meetings, agenda items, votes and documents from a Legistar client (e.g. 'seattle', 'chicago').\n\nReturns: the run's dataset rows as structured JSON (one row per result), plus the run and dataset IDs for paging the full dataset.\n\nBehavior: starts one run of the Apify Actor \"publicrecords/legistar-meetings-scraper\" through Apify's hosted MCP gateway (mcp.apify.com) with your own APIFY_TOKEN; the run uses your Apify account. Read-only: it only reads public web data and changes nothing on the source site. Docs: https://apify.com/publicrecords/legistar-meetings-scraper",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -536,7 +536,7 @@
         ]
       },
       "annotations": {
-        "title": "Legistar City Council Minutes & Agendas: meetings, items",
+        "title": "City Council Meeting Minutes & Agendas Scraper (Legistar)",
         "readOnlyHint": true,
         "destructiveHint": false,
         "idempotentHint": false,
